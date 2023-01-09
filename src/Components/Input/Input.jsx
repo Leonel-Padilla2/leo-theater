@@ -1,10 +1,11 @@
 import './Input.css'
 
-const Input = ({props}) => {
+const Input = ({className, ...props}) => {
   return (
     <input 
-    className='input-component'
-    {...props}
+      className={`input-component ${className}`}
+      required
+      {...props}
     />
   )
 }
