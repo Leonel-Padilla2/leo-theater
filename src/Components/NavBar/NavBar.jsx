@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from  '../../Images/Logo.png'
-import menuLogo from '../../Images/menu-logo.png'
+import logo from  '../../Images/logo.png'
+import menuIcon from '../../Images/menu-icon.png'
 import './NavBar.css'
 
 /*Array which contains routes info in order to map it and show them.*/
@@ -35,7 +35,7 @@ const NavBar = () => {
         <img className='navbar-logo' src={logo} alt="logo"/>
       </Link>
 
-      <img className='navbar-button' src={menuLogo} alt='menu-logo' onClick={hanldeOnClick}/>
+      <img className='navbar-button' src={menuIcon} alt='menu-logo' onClick={hanldeOnClick}/>
       
       <ul className='navbar-list'>
         {
